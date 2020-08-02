@@ -5,9 +5,9 @@ import time
 
 video = cv2.VideoCapture(0) #INITIALISING WEBCAM
 loop, img = video.read() #DECLARING VARIABLE TO CAPTURE FRAME
-face_library = cv2.CascadeClassifier('data/haarcascades/haarcascade_frontalface_default.xml')
-eye_library = cv2.CascadeClassifier('data/haarcascades/haarcascade_righteye_2splits.xml')
-mouth_library = cv2.CascadeClassifier('data/haarcascades/haarcascade_smile.xml')
+face_library = cv2.CascadeClassifier('' + '/haarcascade_frontalface_default.xml')
+eye_library = cv2.CascadeClassifier('' +'/haarcascade_righteye_2splits.xml')
+mouth_library = cv2.CascadeClassifier( ''+'/haarcascade_smile.xml')
 #ALLOWING CAMERA TO WARM UP AND USER TO PREPARE THE OBJECT FOR DETECTION
 time.sleep(2)
 
